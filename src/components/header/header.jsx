@@ -1,12 +1,15 @@
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
+import { StyledHeader, Nav, StyledNavLink, LogoNavLink } from "./header.styled";
 export const Header = () => {
     return (
-      <header>
-        <NavLink to="/">лого домой</NavLink>
-        <nav>
-          <NavLink to="/"> Home</NavLink>
-          <NavLink to="/tweets"> Tweets</NavLink>
-        </nav>
-      </header>
+      <StyledHeader>
+        <LogoNavLink to="/">
+          logo
+        </LogoNavLink>
+        <Nav>
+          <StyledNavLink to="/">Home</StyledNavLink>
+          <StyledNavLink to="/tweets">Tweets</StyledNavLink>
+        </Nav>
+      </StyledHeader>
     );
 };
